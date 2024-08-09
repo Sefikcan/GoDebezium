@@ -1,0 +1,27 @@
+server:
+  appversion: "1.0.0"
+  host: "localhost"
+  port: "5000"
+  mode: "Dev"
+  readtimeout: 5
+  writetimeout: 5
+  maxheaderbytes: 10
+  ctxtimeout: 4
+
+logger:
+  development: true
+  encoding: json
+  level: info
+
+postgres:
+  host: localhost
+  port: 5432
+  username: tariff_user
+  password: password
+  dbname: tariff
+  sslmode: false
+  driver: pgx
+  maxopenconns: 60
+  connmaxlifetime: 120
+  maxIdleconns: 30
+  connmaxidletime: 20
